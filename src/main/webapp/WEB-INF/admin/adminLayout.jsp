@@ -19,6 +19,9 @@
             <a href="${contextPath}/admin/home" class="text-white hover:text-gray-300">Agregar Material</a>
         </li>
         <li>
+            <a href="${contextPath}/admin/query-material" class="text-white hover:text-gray-300">Consultar Material</a>
+        </li>
+        <li>
             <a href="${contextPath}/admin/registry" class="text-white hover:text-gray-300">Administración de Usuarios</a>
         </li>
         <li>
