@@ -10,16 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df14017c-1e30-446a-8978-c67bbff57760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminMaterialServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/SaveMaterialService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UserRolesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminHomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminHomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/CategoriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/CategoriesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/MaterialLanguageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/MaterialLanguageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/BookEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/MaterialEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/MaterialEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminHomeContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminHomeContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminRegistryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminRegistryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/registry/adminRegistryContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/registry/adminRegistryContainer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/registry/adminRegistryContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/registry/adminRegistryContent.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +212,8 @@
       <workItem from="1733230512178" duration="2331000" />
       <workItem from="1733250370937" duration="355000" />
       <workItem from="1733251020488" duration="1551000" />
-      <workItem from="1733268422442" duration="9518000" />
+      <workItem from="1733268422442" duration="10668000" />
+      <workItem from="1733316373326" duration="2162000" />
     </task>
     <servers />
   </component>
