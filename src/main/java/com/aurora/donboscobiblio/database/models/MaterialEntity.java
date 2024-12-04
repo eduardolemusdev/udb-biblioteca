@@ -5,6 +5,8 @@ public class MaterialEntity {
     private String title;
     private String type;
 
+    public MaterialEntity(){}
+
     public MaterialEntity(Integer id, String title, String type) {
         this.id = id;
         this.title = title;

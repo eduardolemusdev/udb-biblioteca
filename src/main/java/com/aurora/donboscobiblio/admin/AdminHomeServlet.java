@@ -25,6 +25,8 @@ public class AdminHomeServlet extends HttpServlet {
           Map<Integer, Integer> mapBuildingFloor = materialLocationService.getBuildingFloors();
           Map<Integer, Integer>  mapBuildingShelf = materialLocationService.getBuildingShelfs();
           Map<Integer, String> mapCategories = categoriesService.getCategories();
+          Map<Integer, String> mapMaterialType = categoriesService.getMaterialTypes();
+
 
 
 
@@ -34,6 +36,7 @@ public class AdminHomeServlet extends HttpServlet {
           request.setAttribute("buildingFloors", mapBuildingFloor);
           request.setAttribute("buildingShelfs", mapBuildingShelf);
           request.setAttribute("categories", mapCategories);
+          request.setAttribute("materialTypes", mapMaterialType);
 
           request.getRequestDispatcher("/WEB-INF/admin/adminHomeContainer.jsp").forward(request, response);
     }

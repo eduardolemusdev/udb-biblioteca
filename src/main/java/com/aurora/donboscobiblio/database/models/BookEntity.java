@@ -7,7 +7,7 @@ public class BookEntity extends MaterialEntity{
     private String publisher;
     private Integer pages;
 
-
+    public BookEntity() {}
     public BookEntity(Integer id, String title, String type, String author, String isbn, Integer publicationYear, String publisher, Integer pages) {
         super(id, title, type);
         this.author = author;

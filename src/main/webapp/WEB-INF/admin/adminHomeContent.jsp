@@ -4,7 +4,7 @@ contentType="text/html;charset=UTF-8" language="java" %> <%@ taglib prefix = "c"
 uri = "http://java.sun.com/jsp/jstl/core" %>
 <div>
   <div>
-    <form>
+    <form action="${contextPath}/admin/material" method="post">
       <div class="flex justify-center p-4 space-x-3">
         <label for="materialTypeComboBox">Tipo de Material:</label>
         <select
@@ -13,10 +13,9 @@ uri = "http://java.sun.com/jsp/jstl/core" %>
           name="materialType"
           required
         >
-          <option value="book" selected>Libro</option>
-          <option value="thesis">Tesis</option>
-          <option value="cd">CD</option>
-          <option value="dvd">DVD</option>
+          <c:forEach items="${materialTypes.entrySet()}" var="entry">
+            <option value="${entry.key}">${entry.key} - ${entry.value}</option>
+          </c:forEach>
         </select>
       </div>
 
@@ -53,15 +52,7 @@ uri = "http://java.sun.com/jsp/jstl/core" %>
           class="rounded-sm border-2 border-gray-400 focus:border-blue-500 focus:outline-none"
           type="number"
           id="publication_year"
-          name="publication_year"
-        />
-
-        <label class="text-xl font-medium" for="edition">Edición:</label>
-        <input
-          class="rounded-sm border-2 border-gray-400 focus:border-blue-500 focus:outline-none"
-          type="text"
-          id="edition"
-          name="edition"
+          name="publicationYear"
         />
 
         <label class="text-xl font-medium" for="publisher">Editorial:</label>
@@ -87,7 +78,7 @@ uri = "http://java.sun.com/jsp/jstl/core" %>
         <select
           id="categoriesCombobox"
           class="rounded-md border-2 border-gray-400"
-          name="language"
+          name="categories"
           required
           multiple
         >
@@ -101,8 +92,9 @@ uri = "http://java.sun.com/jsp/jstl/core" %>
         <select
           id="languageCombobox"
           class="rounded-md border-2 border-gray-400"
-          name="language"
+          name="languages"
           required
+          multiple
         >
           <c:forEach items="${languages.entrySet()}" var="entry">
             <option value="${entry.key}">${entry.key} - ${entry.value}</option>
@@ -114,7 +106,7 @@ uri = "http://java.sun.com/jsp/jstl/core" %>
         <select
           id="buildingCombobox"
           class="rounded-md border-2 border-gray-400"
-          name="language"
+          name="building"
           required
         >
           <c:forEach items="${buildings.entrySet()}" var="entry">
@@ -128,7 +120,7 @@ uri = "http://java.sun.com/jsp/jstl/core" %>
         <select
           id="buildingFloorCombobox"
           class="rounded-md border-2 border-gray-400"
-          name="language"
+          name="buildingFloor"
           required
         >
           <c:forEach items="${buildingFloors.entrySet()}" var="entry">
@@ -142,7 +134,7 @@ uri = "http://java.sun.com/jsp/jstl/core" %>
         <select
           id="buildingShelfCombobox"
           class="rounded-md border-2 border-gray-400"
-          name="language"
+          name="buildingShelf"
           required
         >
           <c:forEach items="${buildingShelfs.entrySet()}" var="entry">
@@ -152,7 +144,7 @@ uri = "http://java.sun.com/jsp/jstl/core" %>
       </div>
 
       <div class="flex justify-center items-center pt-4">
-        <button class="px-2 py-2 bg-green-700 text-2xl text-white">GUARDAR</button>
+        <button type="submit" class="px-2 py-2 bg-green-700 text-2xl text-white">GUARDAR</button>
       </div>
     </form>
   </div>
