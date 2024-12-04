@@ -75,7 +75,7 @@
                         <button
                             class="bg-gray-700 text-white font-medium py-1 px-4 rounded-sm hover:bg-gray-600"
                             onclick="navigatePage(${page+ 1})"
-                            <c:if test="${page== totalPages}" >disabled</c:if>
+                            <c:if test="${page == totalPages || totalPages == 0}" >disabled</c:if>
                         >
                             Siguiente
                         </button>

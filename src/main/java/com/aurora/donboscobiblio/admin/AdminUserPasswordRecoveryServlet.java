@@ -34,6 +34,8 @@ public class AdminUserPasswordRecoveryServlet extends HttpServlet {
           request.setAttribute("users", users);
           request.setAttribute("page", page);
           request.setAttribute("totalPages", totalPages);
+
+          System.out.println("Total pages: "+totalPages);
        request.getRequestDispatcher("/WEB-INF/admin/usersPasswordRecovery/usersPasswordRecoveryContainer.jsp").forward(request, response);
     }
 
