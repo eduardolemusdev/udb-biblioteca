@@ -23,7 +23,7 @@
         </select>
       </div>
        <div>
-           <label class="text-xl font-medium" for="target">Título:</label>
+           <label class="text-xl font-medium" for="target">Buscar:</label>
         <input
           class="rounded-sm border-2 border-gray-400 focus:border-blue-500 focus:outline-none"
           type="text"
@@ -35,18 +35,30 @@
         <button type="submit" class="px-4 py-2 rounded-sm bg-gray-200 border-2 border-black">BUSCAR</button>
     </form>
 
-    <div id="searchResults" class="flex justify-center items-center">
+    <div id="searchResults" class="grid grid-cols-2 gap-4">
 
        <c:forEach items="${results}" var="item">
-          <div class="grid grid-cols-2 w-1/3 border p-2 bg-yellow-50">
-              <span class="font-medium">ID:</span><span>${item.getId()}</span>
-              <span class="font-medium">Título:</span><a href="#" class="text-blue-700 font-medium">/${item.getTitle()}</a>
-              <span class="font-medium">Autor:</span><span>${item.getAuthor()}</span>
-              <span class="font-medium">ISBN:</span><span>${item.getIsbn()}</span>
-              <span class="font-medium">Editorial:</span><span>${item.getPublisher()}</span>
-              <span class="font-medium">Año de Publicación:</span><span>${item.getPublicationYear()}</span>
-              <span class="font-medium">Número de Páginas:</span><span>${item.getPages()}</span>
-          </div>
+          <c:if test="${item.getType() == 'libro'}" var="condition">
+              <div class="grid grid-cols-2  border p-2 bg-yellow-50">
+                  <span class="font-medium">ID:</span><span>${item.getId()}</span>
+                  <span class="font-medium">Título:</span><a href="#" class="text-blue-700 font-medium">/${item.getTitle()}</a>
+                  <span class="font-medium">Autor:</span><span>${item.getAuthor()}</span>
+                  <span class="font-medium">ISBN:</span><span>${item.getIsbn()}</span>
+                  <span class="font-medium">Editorial:</span><span>${item.getPublisher()}</span>
+                  <span class="font-medium">Año de Publicación:</span><span>${item.getPublicationYear()}</span>
+                  <span class="font-medium">Número de Páginas:</span><span>${item.getPages()}</span>
+              </div>
+          </c:if>
+          <c:if test="${item.getType() == 'dvd'}" var="condition">
+              <div class="grid grid-cols-2  border p-2 bg-yellow-50">
+                  <span class="font-medium">ID:</span><span>${item.getId()}</span>
+                  <span class="font-medium">Título:</span><a href="#" class="text-blue-700 font-medium">/${item.getTitle()}</a>
+                  <span class="font-medium">Director:</span><span>${item.getDirector()}</span>
+                  <span class="font-medium">Género:</span><span>${item.getGenre()}</span>
+                  <span class="font-medium">Año de Lanzamiento:</span><span>${item.getReleaseYear()}</span>
+                  <span class="font-medium">Duración:</span><span>${item.getDuration()}</span>
+              </div>
+          </c:if>
        </c:forEach>
     </div>
 </div>
