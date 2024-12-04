@@ -5,7 +5,7 @@
     <h1 class="text-2xl py-2">Registro de usuarios</h1>
 
     <div class="flex justify-center items-center">
-        <form class="space-y-4 w-1/3">
+        <form class="space-y-4 w-1/3" action="${contextPath}/admin/registry" method="post">
         <div>
             <label class="text-xl font-medium" for="username">Username:</label>
             <input

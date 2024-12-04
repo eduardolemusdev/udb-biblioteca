@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="${contextPath}/public/css/global.css" />
     <link rel="stylesheet" href="${contextPath}/public/css/mintail.css" />
     <script src="${contextPath}/public/js/addMaterialService.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
@@ -22,7 +24,10 @@
             <a href="${contextPath}/admin/query-material" class="text-white hover:text-gray-300">Consultar Material</a>
         </li>
         <li>
-            <a href="${contextPath}/admin/registry" class="text-white hover:text-gray-300">Administración de Usuarios</a>
+            <a href="${contextPath}/admin/registry" class="text-white hover:text-gray-300">Registro de Usuarios</a>
+        </li>
+        <li>
+            <a href="${contextPath}/admin/password-recovery" class="text-white hover:text-gray-300">Actualización de Contraseña</a>
         </li>
         <li>
             <a href="${contextPath}/admin/loans" class="text-white hover:text-gray-300">Préstamos Configuración</a>

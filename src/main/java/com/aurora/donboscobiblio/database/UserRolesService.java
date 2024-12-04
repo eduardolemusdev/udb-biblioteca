@@ -25,4 +25,22 @@ public class UserRolesService {
             throw new RuntimeException(e);
         }
     }
+
+    public String getRoleById(int id){
+        String query = "select * from users_roles where id = ?";
+        String roleName = null;
+        try(Connection conn = DatabaseConnection.getConnection()){
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+
+            if(rs.next()){
+               roleName = rs.getString("role_name");
+            }
+
+            return roleName;
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+    }
 }

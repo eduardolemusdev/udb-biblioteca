@@ -21,5 +21,10 @@ public class AdminRegistryServlet extends HttpServlet {
           roles.values().forEach(System.out::println);
           request.setAttribute("roles", roles);
        request.getRequestDispatcher("/WEB-INF/admin/registry/adminRegistryContainer.jsp").forward(request, response);
-    }
+      }
+
+      public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
+          response.sendRedirect(request.getContextPath()+"/admin/password-recovery");
+      }
 }
