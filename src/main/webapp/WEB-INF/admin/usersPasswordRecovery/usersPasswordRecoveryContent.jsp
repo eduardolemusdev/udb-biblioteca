@@ -58,6 +58,31 @@
                     </tr>
                 </c:forEach>
             </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4" class="border border-gray-400 px-4 py-2 text-center">
+                    <div class="flex justify-between items-center text-black">
+                        <button
+                            class="bg-gray-700 text-white font-medium py-1 px-4 rounded-sm hover:bg-gray-600"
+                            onclick="navigatePage(${page- 1})"
+                            <c:if test="${page== 1}" >disabled</c:if>
+                        >
+                            Anterior
+                        </button>
+                        <span class="text-lg font-medium">
+                            Página ${page} de ${totalPages}
+                        </span>
+                        <button
+                            class="bg-gray-700 text-white font-medium py-1 px-4 rounded-sm hover:bg-gray-600"
+                            onclick="navigatePage(${page+ 1})"
+                            <c:if test="${page== totalPages}" >disabled</c:if>
+                        >
+                            Siguiente
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
         </table>
     </div>
 </div>
@@ -118,5 +143,10 @@
 
                 }
             });
+        }
+
+        function navigatePage(pageNumber) {
+            const url = `${contextPath}/admin/password-recovery?page=`+pageNumber;
+            window.location.href = url;
         }
     </script>

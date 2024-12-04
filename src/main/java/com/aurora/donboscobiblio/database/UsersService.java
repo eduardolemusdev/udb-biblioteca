@@ -39,4 +39,20 @@ public class UsersService {
             throw new RuntimeException(e);
         }
     }
+
+    public Integer usersCount(){
+         String query = "SELECT COUNT(*) AS total FROM users";
+         Integer count = 0;
+         try(Connection conn = DatabaseConnection.getConnection()){
+            PreparedStatement ps = conn.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+            if(rs.next()){
+                count = rs.getInt("total");
+            }
+
+            return count;
+         }catch (SQLException e){
+             throw new RuntimeException(e);
+         }
+    }
 }

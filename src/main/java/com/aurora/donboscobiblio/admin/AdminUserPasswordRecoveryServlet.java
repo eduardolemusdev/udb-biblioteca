@@ -19,8 +19,21 @@ import java.util.List;
 public class AdminUserPasswordRecoveryServlet extends HttpServlet {
       private final UsersService usersService = new UsersService();
       public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-          List<UserEntity> users = usersService.getUsers(1,5);
+          Integer page = null;
+
+          try {
+            page = Integer.parseInt(request.getParameter("page"));
+          }catch (Exception e){
+            page = 1;
+          }
+
+          List<UserEntity> users = usersService.getUsers(page,5);
+          Integer totalUsers = usersService.usersCount();
+          Integer totalPages = (int) Math.ceil((double) totalUsers/5);
+
           request.setAttribute("users", users);
+          request.setAttribute("page", page);
+          request.setAttribute("totalPages", totalPages);
        request.getRequestDispatcher("/WEB-INF/admin/usersPasswordRecovery/usersPasswordRecoveryContainer.jsp").forward(request, response);
     }
 
