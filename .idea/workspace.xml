@@ -10,10 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df14017c-1e30-446a-8978-c67bbff57760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/LoansService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminRegistryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminRegistryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminHomeContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminHomeContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminLayout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminLayout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/adminLoansContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/adminLoansContainer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/adminLoansContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/adminLoansContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/queryMaterial/adminQueryMaterialContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/queryMaterial/adminQueryMaterialContent.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/registry/adminRegistryContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/registry/adminRegistryContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/usersPasswordRecovery/usersPasswordRecoveryContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/usersPasswordRecovery/usersPasswordRecoveryContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/public/css/mintail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/public/css/mintail.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +102,6 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.97" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.97" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="donboscobiblio:war exploded">
           <settings>
@@ -215,7 +221,7 @@
       <workItem from="1733268422442" duration="10668000" />
       <workItem from="1733316373326" duration="2208000" />
       <workItem from="1733329344653" duration="11619000" />
-      <workItem from="1733343560088" duration="658000" />
+      <workItem from="1733343560088" duration="3048000" />
     </task>
     <servers />
   </component>
