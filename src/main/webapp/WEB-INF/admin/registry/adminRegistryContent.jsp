@@ -50,6 +50,9 @@
             Crear Usuario
         </button>
        </div>
+       <div>
+           <p class="text-xl text-red-700">${errorMessage}</p>
+       </div>
     </form>
     </div>
 

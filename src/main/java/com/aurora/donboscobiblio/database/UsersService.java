@@ -2,10 +2,7 @@ package com.aurora.donboscobiblio.database;
 
 import com.aurora.donboscobiblio.database.models.UserEntity;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,5 +51,20 @@ public class UsersService {
          }catch (SQLException e){
              throw new RuntimeException(e);
          }
+    }
+
+    public void insertUser(String username, String password, Integer roleId) {
+        String sql = "insert into users (username, user_password, role_id) values(?,?,?)";
+        try(Connection conn = DatabaseConnection.getConnection()){
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, username);
+            ps.setString(2, password);
+            ps.setInt(3, roleId);
+            ps.executeUpdate();
+        }catch (SQLIntegrityConstraintViolationException e){
+            throw new RuntimeException("Nombre de usuario ya existe, tiene que escoger otro.");
+        }catch (SQLException e){
+            throw new RuntimeException("Error al insertar el usuario, intentelo nuevamente");
+        }
     }
 }
