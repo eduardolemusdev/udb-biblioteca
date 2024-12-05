@@ -80,4 +80,9 @@ public class LoanConfigEntity {
         String role = userRolesService.getRoleById(this.roleId);
         return role;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +" => "+ id+ "/" + daysLimit + "/" + taxPenaltyPerDay + "/" + activeLoansLimit + "/" + roleId;
+    }
 }

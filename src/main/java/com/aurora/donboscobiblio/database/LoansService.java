@@ -46,4 +46,20 @@ public class LoansService {
             throw new RuntimeException(e);
         }
     }
+
+    public void updateLoanConfig(LoanConfigEntity loanConfigEntity){
+        String query = "update loans_conditions set days_limit = ?, tax_penalty_per_day= ?, active_loans_limit = ?, enabled = ? where id = ?";
+        try(Connection conn = DatabaseConnection.getConnection()){
+           PreparedStatement ps = conn.prepareStatement(query);
+           ps.setInt(1, loanConfigEntity.getDaysLimit());
+           ps.setDouble(2, loanConfigEntity.getTaxPenaltyPerDay());
+           ps.setInt(3, loanConfigEntity.getActiveLoansLimit());
+           ps.setBoolean(4, loanConfigEntity.isEnabled());
+           ps.setInt(5, loanConfigEntity.getId());
+
+           ps.executeUpdate();
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+    }
 }
