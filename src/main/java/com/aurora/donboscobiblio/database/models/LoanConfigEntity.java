@@ -10,6 +10,16 @@ public class LoanConfigEntity {
     int roleId;
     boolean enabled = false;
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    String description;
+
     public LoanConfigEntity() {}
 
     public LoanConfigEntity(int daysLimit, double taxPenaltyPerDay, int activeLoansLimnit, int roleId) {

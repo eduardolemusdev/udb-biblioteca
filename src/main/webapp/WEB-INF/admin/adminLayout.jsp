@@ -36,7 +36,7 @@
             <a href="${contextPath}/admin/loans/update" class="text-white hover:text-gray-300">Actualizar - Préstamo Configuración</a>
         </li>
         <li>
-            <a href="${contextPath}/admin/material-loan" class="text-white hover:text-gray-300">Actualizar - Préstamo Configuración</a>
+            <a href="${contextPath}/admin/material-loan" class="text-white hover:text-gray-300">Crear Préstamo</a>
         </li>
     </ul>
 </nav>

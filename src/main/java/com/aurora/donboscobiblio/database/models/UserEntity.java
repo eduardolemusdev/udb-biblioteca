@@ -7,6 +7,7 @@ public class UserEntity {
     private String username;
     private String password;
     private String role;
+    private Integer roleId;
 
     public UserEntity() {}
 
@@ -43,6 +44,14 @@ public class UserEntity {
     public String getRole() {
         UserRolesService userRolesService = new UserRolesService();
         return userRolesService.getRoleById(this.id);
+    }
+
+    public Integer getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
     }
 
     public void setRole(String role) {

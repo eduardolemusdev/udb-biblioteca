@@ -10,22 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df14017c-1e30-446a-8978-c67bbff57760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminAddMaterialLoanServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetMaterialByIdServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetUserByIdServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/materialLoan/adminCreateMaterialLoanContainer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/materialLoan/adminCreateMaterialLoanContent.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetLoansConfigByRoleServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/dtos/CreateMaterialLoanDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminUpdateLoansServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminUpdateLoansServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminAddMaterialLoanServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminAddMaterialLoanServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetUserByIdServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetUserByIdServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/LoansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/LoansService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/SearchMaterialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/SearchMaterialService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/LoanConfigEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/LoanConfigEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/UserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminLayout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminLayout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoans/adminUpdateLoansContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoansConfig/adminUpdateLoansContainer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoans/adminUpdateLoansContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoansConfig/adminUpdateLoansContent.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/public/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/public/css/mintail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/public/css/mintail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/materialLoan/adminCreateMaterialLoanContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/materialLoan/adminCreateMaterialLoanContent.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,23 +71,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.97.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 9.0.97.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bunny\Escritorio\universidad\POO\donboscobiblio\src\main\webapp\WEB-INF" />
@@ -107,6 +103,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.97" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.97" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="donboscobiblio:war exploded">
           <settings>
@@ -229,7 +226,8 @@
       <workItem from="1733343560088" duration="3189000" />
       <workItem from="1733360105693" duration="10695000" />
       <workItem from="1733439587442" duration="5169000" />
-      <workItem from="1733532425144" duration="10378000" />
+      <workItem from="1733532425144" duration="12732000" />
+      <workItem from="1733572264368" duration="6471000" />
     </task>
     <servers />
   </component>

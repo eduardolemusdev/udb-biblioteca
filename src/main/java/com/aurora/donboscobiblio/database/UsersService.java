@@ -80,6 +80,7 @@ public class UsersService {
                 user.setId(rs.getInt("id"));
                 user.setUsername(rs.getString("username"));
                 user.setPassword(rs.getString("user_password"));
+                user.setRoleId(rs.getInt("role_id"));
             }else{
                 return user = null;
             }
