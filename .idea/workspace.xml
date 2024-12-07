@@ -10,11 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df14017c-1e30-446a-8978-c67bbff57760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminAddMaterialLoanServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetMaterialByIdServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetUserByIdServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/materialLoan/adminCreateMaterialLoanContainer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/materialLoan/adminCreateMaterialLoanContent.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminUpdateLoansServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminUpdateLoansServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/LoansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/LoansService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/LoanConfigEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/LoanConfigEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoans/adminUpdateLoansContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoans/adminUpdateLoansContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/SearchMaterialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/SearchMaterialService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminLayout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminLayout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoans/adminUpdateLoansContainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoansConfig/adminUpdateLoansContainer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoans/adminUpdateLoansContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/updateLoansConfig/adminUpdateLoansContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/public/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/public/css/mintail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/public/css/mintail.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +227,9 @@
       <workItem from="1733316373326" duration="2208000" />
       <workItem from="1733329344653" duration="11619000" />
       <workItem from="1733343560088" duration="3189000" />
-      <workItem from="1733360105693" duration="10289000" />
+      <workItem from="1733360105693" duration="10695000" />
+      <workItem from="1733439587442" duration="5169000" />
+      <workItem from="1733532425144" duration="10378000" />
     </task>
     <servers />
   </component>

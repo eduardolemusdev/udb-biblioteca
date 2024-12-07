@@ -1,5 +1,7 @@
 package com.aurora.donboscobiblio.database.models;
 
+import com.aurora.donboscobiblio.database.UserRolesService;
+
 public class UserEntity {
     private Integer id;
     private String username;
@@ -39,7 +41,8 @@ public class UserEntity {
     }
 
     public String getRole() {
-        return role;
+        UserRolesService userRolesService = new UserRolesService();
+        return userRolesService.getRoleById(this.id);
     }
 
     public void setRole(String role) {

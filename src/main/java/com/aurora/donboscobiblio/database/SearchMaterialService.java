@@ -149,4 +149,24 @@ public class SearchMaterialService {
             throw new RuntimeException(e);
         }
     }
+
+    public MaterialEntity searchPlainMaterialById(Integer id){
+          String sql = "select * from material where id = ?";
+         MaterialEntity material = new MaterialEntity();
+        try(Connection conn = DatabaseConnection.getConnection()){
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+
+            if(rs.next()){
+                material.setId(rs.getInt("id"));
+                material.setTitle(rs.getString("title"));
+            }else{
+                return material = null;
+            }
+            return material;
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+    }
 }

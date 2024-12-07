@@ -67,4 +67,25 @@ public class UsersService {
             throw new RuntimeException("Error al insertar el usuario, intentelo nuevamente");
         }
     }
+
+    public UserEntity getUser(int id) {
+         String sql = "select * from users where id = ?";
+         UserEntity user = new UserEntity();
+        try(Connection conn = DatabaseConnection.getConnection()){
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+
+            if(rs.next()){
+                user.setId(rs.getInt("id"));
+                user.setUsername(rs.getString("username"));
+                user.setPassword(rs.getString("user_password"));
+            }else{
+                return user = null;
+            }
+            return user;
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+    }
 }

@@ -21,7 +21,7 @@ public class AdminUpdateLoansServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<LoanConfigEntity> loans = loansService.listLoanConfig();
         request.setAttribute("elements", loans);
-        request.getRequestDispatcher("/WEB-INF/admin/loans/updateLoans/adminUpdateLoansContainer.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/admin/loans/updateLoansConfig/adminUpdateLoansContainer.jsp").forward(request, response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

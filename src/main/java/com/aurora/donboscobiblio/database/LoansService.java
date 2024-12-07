@@ -62,4 +62,30 @@ public class LoansService {
             throw new RuntimeException(e);
         }
     }
+
+    public LoanConfigEntity getLoanConfigById(int id){
+       String query = "select * from loans_conditions where id = ?";
+       LoanConfigEntity loanConfigEntity = new LoanConfigEntity();
+       try(Connection conn = DatabaseConnection.getConnection()){
+          PreparedStatement ps = conn.prepareStatement(query);
+          ps.setInt(1, id);
+
+          ResultSet rs = ps.executeQuery();
+          if(rs.next()){
+             loanConfigEntity.setDaysLimit(rs.getInt("days_limit"));
+             loanConfigEntity.setTaxPenaltyPerDay(rs.getDouble("tax_penalty_per_day"));
+             loanConfigEntity.setActiveLoansLimit(rs.getInt("active_loans_limit"));
+             loanConfigEntity.setId(rs.getInt("id"));
+             loanConfigEntity.setRoleId(rs.getInt("role_id"));
+             loanConfigEntity.setEnabled(rs.getBoolean("enabled"));
+          }else{
+              loanConfigEntity = null;
+          }
+
+          return loanConfigEntity;
+       }catch (SQLException e){
+           throw new RuntimeException(e);
+       }
+
+    }
 }
