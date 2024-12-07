@@ -10,17 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df14017c-1e30-446a-8978-c67bbff57760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetLoansConfigByRoleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/dtos/CreateMaterialLoanDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminAddMaterialLoanServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/AdminAddMaterialLoanServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetUserByIdServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/admin/servicesQuerys/GetUserByIdServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/LoansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/LoansService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/LoanConfigEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/LoanConfigEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aurora/donboscobiblio/database/models/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminLayout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/adminLayout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/materialLoan/adminCreateMaterialLoanContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/loans/materialLoan/adminCreateMaterialLoanContent.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +218,7 @@
       <workItem from="1733360105693" duration="10695000" />
       <workItem from="1733439587442" duration="5169000" />
       <workItem from="1733532425144" duration="12732000" />
-      <workItem from="1733572264368" duration="6471000" />
+      <workItem from="1733572264368" duration="7090000" />
     </task>
     <servers />
   </component>

@@ -136,14 +136,15 @@ public class LoansService {
                throw new SQLException("No se peude realizar el prestamo: maximo de prestamos alcanzado");
            }
 
-           String createLoanQuery = "insert into loans (date_return_estimated, loans_conditions_id, user_id) values (?,?,?)";
+           String createLoanQuery = "insert into loans (date_return_estimated, loans_conditions_id, user_id) values ( current_date +  ?,?,?)";
            PreparedStatement psCreateLoan = conn.prepareStatement(createLoanQuery);
-           psCreateLoan.setString(1, "current_date +"+createMaterialLoanDto.getDaysLimit());
+           psCreateLoan.setInt(1, createMaterialLoanDto.getDaysLimit());
            psCreateLoan.setInt(2, createMaterialLoanDto.getLoanConditionsId());
            psCreateLoan.setInt(3, createMaterialLoanDto.getUserId());
            psCreateLoan.executeUpdate();
 
         }catch (SQLException e){
+            e.printStackTrace();
             throw new RuntimeException(e.getMessage());
         }
 
